@@ -84,7 +84,7 @@ export default function GameScreen({ route, navigation }) {
       />
 
       <Text style={{ fontWeight: "bold", fontSize: 20 }}>
-        Times i've been here: {count}
+        Times I've been here: {count}
       </Text>
     </View>
   );

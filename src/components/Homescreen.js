@@ -22,11 +22,13 @@ export default function HomeScreen({ route, navigation }) {
         Welcome to my awesome app!
       </Text>
       <Text style={{ fontWeight: "bold", fontSize: 20 }}>
-        Times i've been here: {count}
+        Times I've been here: {count}
       </Text>
       <Button
-        title="Go to Game"
-        onPress={() => navigation.navigate("Game", { count })}
+        title="Play Game"
+        onPress={() =>
+          navigation.navigate("Game", { screen: "Play", params: { count } })
+        }
       />
     </View>
   );
